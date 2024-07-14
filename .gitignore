@@ -1,0 +1,4 @@
+.env
+go.mod.old
+go.sum.old
+vendor/modules.txt.old
