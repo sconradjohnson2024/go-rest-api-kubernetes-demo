@@ -13,6 +13,7 @@ import (
 	"github.com/julienschmidt/httprouter"
 )
 
+
 func newRouter() *httprouter.Router {
 	mux := httprouter.New()
 	ytApiKey := os.Getenv("YOUTUBE_API_KEY")
@@ -21,7 +22,6 @@ func newRouter() *httprouter.Router {
 	}
 
 	ytChannelID := os.Getenv("YOUTUBE_CHANNEL_ID")
-
 	if ytChannelID == "" {
 		log.Fatal("youtube channel ID not provided")
 	}

@@ -32,6 +32,7 @@ func getChannelStats(k string, channelID string) httprouter.Handle {
 
 		call := yts.Channels.List([]string{"snippet, contentDetails, statistics"})
 		response, err := call.Id(channelID).Do()
+		
 		if err != nil {
 			fmt.Println(err)
 			w.WriteHeader(http.StatusBadRequest)
