@@ -3,6 +3,7 @@ module github.com/sconradjohnson2024/go-rest-api-kubernetes-demo
 go 1.22.1
 
 require (
+	github.com/joho/godotenv v1.5.1
 	github.com/julienschmidt/httprouter v1.3.0
 	google.golang.org/api v0.188.0
 )
